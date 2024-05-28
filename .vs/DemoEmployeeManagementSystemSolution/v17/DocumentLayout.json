@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Server\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{858ED115-DAF7-48A0-AB50-35B27F8F3641}|Server\\Server.csproj|c:\\users\\dell\\desktop\\ciautoaplicaionweb\\demoemployeemanagementsystemsolution\\server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858ED115-DAF7-48A0-AB50-35B27F8F3641}|Server\\Server.csproj|solutionrelative:server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B972E7B-87A2-419C-9E4C-C0D0B241EF1C}|Client\\Client.csproj|c:\\users\\dell\\desktop\\ciautoaplicaionweb\\demoemployeemanagementsystemsolution\\client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B972E7B-87A2-419C-9E4C-C0D0B241EF1C}|Client\\Client.csproj|solutionrelative:client\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B972E7B-87A2-419C-9E4C-C0D0B241EF1C}|Client\\Client.csproj|c:\\users\\dell\\desktop\\ciautoaplicaionweb\\demoemployeemanagementsystemsolution\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B972E7B-87A2-419C-9E4C-C0D0B241EF1C}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{858ED115-DAF7-48A0-AB50-35B27F8F3641}|Server\\Server.csproj|c:\\users\\dell\\desktop\\ciautoaplicaionweb\\demoemployeemanagementsystemsolution\\server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{858ED115-DAF7-48A0-AB50-35B27F8F3641}|Server\\Server.csproj|solutionrelative:server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B22BCE8-AD78-4972-9FFD-BED21D0845CC}|ClientLibrary\\ClientLibrary.csproj|c:\\users\\dell\\desktop\\ciautoaplicaionweb\\demoemployeemanagementsystemsolution\\clientlibrary\\helpers\\customhttphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B22BCE8-AD78-4972-9FFD-BED21D0845CC}|ClientLibrary\\ClientLibrary.csproj|solutionrelative:clientlibrary\\helpers\\customhttphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_7GNST57_MULTIDIMENCIONAL/DemoSistem/sa2/SqlTable/dbo.ApplicationUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "libman.json",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\libman.json",
+              "RelativeDocumentMoniker": "Server\\libman.json",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\libman.json",
+              "RelativeToolTip": "Server\\libman.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-28T14:20:23.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Server\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T14:19:33.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\Pages\\Weather.razor",
+              "RelativeToolTip": "Client\\Pages\\Weather.razor",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-28T14:18:57.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.ApplicationUsers [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_7GNST57_MULTIDIMENCIONAL/DemoSistem/sa2/SqlTable/dbo.ApplicationUsers.sql",
+              "ToolTip": "dbo.ApplicationUsers [Datos]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-28T14:05:07.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomHttpHandler.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\ClientLibrary\\Helpers\\CustomHttpHandler.cs",
+              "RelativeDocumentMoniker": "ClientLibrary\\Helpers\\CustomHttpHandler.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\ClientLibrary\\Helpers\\CustomHttpHandler.cs",
+              "RelativeToolTip": "ClientLibrary\\Helpers\\CustomHttpHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T03:57:35.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Server\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T03:46:08.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Client\\Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\Program.cs",
+              "RelativeToolTip": "Client\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T04:33:27.974Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
