@@ -145,3 +145,4 @@ C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Se
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Server\bin\Debug\net8.0\libman.json
+C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Server\obj\Debug\net8.0\Server.sourcelink.json

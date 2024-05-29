@@ -33,6 +33,14 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\wwwroot\\images\\background\\ciauto-2022-modelos.jpg",
+      "PackagePath": "staticwebassets\\images\\background\\ciauto-2022-modelos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\wwwroot\\images\\companylogos\\ciautoLogo.webp",
+      "PackagePath": "staticwebassets\\images\\companylogos\\ciautoLogo.webp"
+    },
+    {
       "Id": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

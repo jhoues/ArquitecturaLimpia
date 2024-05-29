@@ -10,3 +10,4 @@ C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Ba
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\BaseLibrary\obj\Debug\net8.0\BaseLibrary.pdb
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\BaseLibrary\obj\Debug\net8.0\ref\BaseLibrary.dll
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\BaseLibrary\obj\Debug\net8.0\BaseLibrary.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\BaseLibrary\obj\Debug\net8.0\BaseLibrary.sourcelink.json

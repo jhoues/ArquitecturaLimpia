@@ -1107,3 +1107,5 @@ C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Cl
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Client\obj\Debug\net8.0\compressed\7ayetcfzwe.gz
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Client\obj\Debug\net8.0\compressed\n64toq68th.gz
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Client\obj\Debug\net8.0\compressed\5raig3jieb.gz
+C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Client\obj\Debug\net8.0\Client.sourcelink.json
+C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Client\obj\Debug\net8.0\scopedcss\Layout\MainLayout - Copia.razor.rz.scp.css

@@ -13,3 +13,4 @@ C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Cl
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\ClientLibrary\bin\Debug\net8.0\BaseLibrary.pdb
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\ClientLibrary\obj\Debug\net8.0\ClientLibrary.csproj.AssemblyReference.cache
 C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\ClientLibrary\obj\Debug\net8.0\ClientLi.3D08BA28.Up2Date
+C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\ClientLibrary\obj\Debug\net8.0\ClientLibrary.sourcelink.json
