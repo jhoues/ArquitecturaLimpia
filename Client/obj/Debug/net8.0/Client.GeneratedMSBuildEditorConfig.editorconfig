@@ -34,12 +34,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VzXFJlZ2lzdGVyUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/AuthenticationPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25QYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/HomePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEhvbWVQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/ButtonLoadingSpinner.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xCdXR0b25Mb2FkaW5nU3Bpbm5lci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/Weather.razor]
@@ -50,9 +58,9 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Layout/MainLayout - Copia.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQgLSBDb3BpYS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-5eg4dndxlv
+[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Layout/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEF1dGhlbnRpY2F0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-b5hhnc0gxr
 
 [C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
