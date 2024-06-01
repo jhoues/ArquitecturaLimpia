@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VQ2wSKtfukCJl9AgOqmFZibsnjOCzz7oBGUuImajsfY=",
+  "Hash": "ZBYus1QaeHn1D3ISWPVqX8lOKbU3nHPQ9F1pY2swnzI=",
   "Source": "Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -50973,6 +50973,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\companylogos\\ciautoLogo.webp"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\wwwroot\\images\\Profile\\JonathanEscobare.png",
+      "SourceId": "Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/Profile/JonathanEscobare.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Profile\\JonathanEscobare.png"
     },
     {
       "Identity": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Client\\wwwroot\\index.html",

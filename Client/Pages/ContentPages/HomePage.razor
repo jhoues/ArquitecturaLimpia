@@ -1,11 +1,16 @@
 ﻿@page "/home/dashboard"
-<h1>HomePage</h1>
-@code{
+@using Client.Pages.AdministrationPages
+@using Client.Pages.DepartamentPages
+<TableBanner />
+<GeneralDepartmentPage />
+@code {
     [CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
+
     protected async override Task OnInitializedAsync()
     {
         await CheckUserAuthentication();
     }
+
     private async Task CheckUserAuthentication()
     {
         var user = (await AuthenticationState).User;

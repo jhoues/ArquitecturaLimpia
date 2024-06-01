@@ -8,6 +8,10 @@ namespace BaseLibrary.Entities
 {
     public class Town : BaseEntity
     {
-
+        //Relacion uno a muchos con Empleados
+        public List<Employee>? Employees { get; set; }
+        //Muchos a uno relacionado con City
+        public City? City { get; set; }
+        public int CityId { get; set; }
     }
 }

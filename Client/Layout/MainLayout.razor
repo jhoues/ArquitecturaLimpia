@@ -1,5 +1,7 @@
 ﻿@inherits LayoutComponentBase
-
+@using Client.Pages.OtherPages
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
 <div class="page">
     <div class="sidebar">
         <NavMenu />
@@ -7,19 +9,19 @@
 
     <main>
         <div class="top-row px-4">
-            <AuthorizeView>
-                <Authorized>
-                    <a class="btn btn-none text-danger" @onclick="LogoutClicked">Logout</a>
-                </Authorized>
-            </AuthorizeView>
+            <ProfileDropDown />
         </div>
+
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
-<Syncfusion.Blazor.Popups.SfDialogProvider/>
-@code{
+
+<Syncfusion.Blazor.Popups.SfDialogProvider />
+
+@code {
+    
     async Task LogoutClicked()
     {
         var logoutModel = new UserSession();

@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace BaseLibrary.Entities
 {
+    //many to one relationship with General departament
     public class Department : BaseEntity
     {
-
+        //muchos a una realcionado con General Departaments
+        public GeneralDepartment? GeneralDepartment { get; set; }
+        
+        public int GeneralDepartmentId { get; set; }
+        //uno a muchos relacionado con Branch
+        public List<Branch>? Branches { get; set; }
     }
 }

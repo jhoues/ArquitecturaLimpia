@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BaseLibrary.Entities
+﻿namespace BaseLibrary.Entities
 {
     public class Branch : BaseEntity
     {
-
+        // muchos a uno relacionado con Departamneto 
+        public Department? Department { get; set; }
+        public int DepartmentId { get; set; }
+        //Relacionado uno a muchos con Employee
+        public List<Employee>? Employees { get; set; }
     }
 }
