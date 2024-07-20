@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BaseLibrary.Entities
 {
-    public class Doctor:OtherBaseEntity
+    public class Doctor: OtherBaseEntity
     {
         [Required]
         public DateTime Date { get; set; }

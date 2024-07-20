@@ -1,6 +1,4 @@
-﻿
-
-namespace BaseLibrary.Entities
+﻿namespace BaseLibrary.Entities
 {
     public class ApplicationUser 
     {
@@ -8,5 +6,6 @@ namespace BaseLibrary.Entities
         public string? Fullname { get; set; }
         public string? Email { get; set; }
         public string? Password { get; set; }
+        
     }
 }

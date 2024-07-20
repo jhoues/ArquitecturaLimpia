@@ -1,0 +1,105 @@
+﻿<div class="container-fluid">
+
+    <div class="row">
+        <AuthorizeView Roles="Admin">
+            <Authorized>
+        <div class="col-lg-2 cursorStyle">
+            <div class="card border-primary" style="min-height: 100px;" @onclick="EmployeeClicked">
+                <div class="card-header"><i class="bi bi-people text-primary"></i> Empleados
+                    <span class="badge bg-primary fs-6"> @Employees.Count</span>
+                </div>
+            </div>
+        </div>
+            </Authorized>
+        </AuthorizeView>
+        <AuthorizeView Roles="Admin,User,Employee" >
+            <Authorized>
+        <div class="col-lg-2 cursorStyle">
+            <div class="card border-success" style="min-height: 100px;" @onclick="VacationClicked">
+                <div class="card-header"><i class="bi bi-backpack3 text-success"></i> Vacaciones
+                    <span class="badge bg-success fs-6"> @Vacations.Count</span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 cursorStyle">
+            <div class="card border-danger" style="min-height: 100px;" @onclick="OvertimeClicked">
+                <div class="card-header"><i class="bi bi-stopwatch text-danger"></i> Horas Extras
+                    <span class="badge bg-danger fs-6"> @Overtimes.Count</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 cursorStyle">
+            <div class="card border-warning" style="min-height: 100px;" @onclick="HealthClicked">
+                <div class="card-header"><i class="bi bi-hospital text-warning"></i> Doctor
+                    <span class="badge bg-warning fs-6"> @Health.Count</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 cursorStyle">
+            <div class="card border-info" style="min-height: 100px;" @onclick="SanctionClicked">
+                <div class="card-header"><i class="bi bi-x-octagon text-info"></i> Multas
+                    <span class="badge bg-info fs-6"> @Sanctions.Count</span>
+                </div>
+            </div>
+        </div>
+            </Authorized>
+        </AuthorizeView>
+        <AuthorizeView Roles="Admin">
+            <Authorized>
+        <div class="col-lg-2 cursorStyle">
+            <div class="card border-dark" style="min-height: 100px;" @onclick="DepartmentClicked">
+                <div class="card-header"><i class="bi bi-slack text-dark"></i> Departamentos
+                    <span class="badge bg-dark fs-6"> @Departments.Count</span>
+                </div>
+            </div>
+        </div>
+            </Authorized>
+        </AuthorizeView>
+    </div>
+</div>
+<style>
+    cursorStyle {
+        cursor: pointer;
+    }
+</style>
+@code {
+    public List<Employee> Employees { get; set; } = new();
+    public List<Department> Departments { get; set; } = new();
+    public List<Overtime> Overtimes { get; set; } = new();
+    public List<Sanction> Sanctions { get; set; } = new();
+    public List<Vacation> Vacations { get; set; } = new();
+    public List<Doctor> Health { get; set; } = new();
+    protected async override Task OnInitializedAsync()
+    {
+    allState.Action += StateHasChanged;
+    await LoadDefaults();
+    }
+    async Task LoadDefaults()
+    {
+        try
+        {
+            Employees = await employeeService.GetAll(Constants.EmployeeBaseUrl);
+            Departments = await departmentService.GetAll(Constants.DepartmentBaseUrl);
+            Overtimes = await overtimeService.GetAll(Constants.OvertimeBaseUrl);
+            Sanctions = await sanctionService.GetAll(Constants.SanctionBaseUrl);
+            Vacations = await vacationService.GetAll(Constants.VacationBaseUrl);
+            Health = await doctorService.GetAll(Constants.DoctorBaseUrl);
+        }
+        catch (Exception ex)
+        {
+            // Loguea el error para diagnóstico
+            Console.WriteLine($"Error loading defaults: {ex.Message}");
+            throw;
+        }
+    }
+
+    void HealthClicked() => allState.HealthClicked();
+    void OvertimeClicked() => allState.OvertimeClicked();
+    void SanctionClicked() => allState.SanctionClicked();
+    void VacationClicked()=> allState.VacationClicked();
+    void EmployeeClicked() => allState.EmployeeClicked();
+    void DepartmentClicked() => allState.DepartmentClicked();
+
+    public void Dispose() => allState.Action -= StateHasChanged;
+}

@@ -1,0 +1,185 @@
+﻿@implements IDisposable
+
+@if (allState.ShowSanction)
+{
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card shadow-lg border-info">
+                    <div class="card-header">
+                        <h4 class="float-start">Manage Employees Overtime</h4>
+                    </div>
+                    <div class="card-body">
+                        @{
+                            var Tool = (new List<string>() { "Search", "ExcelExport", "PdfExport", "Print" });
+                        }
+                        <SfGrid DataSource="Sanctions" AllowPaging="true" AllowSorting="true" Toolbar="@Tool" AllowExcelExport="true" @ref="DefaultGrid" AllowPdfExport="true">
+                            <GridPageSettings PageSize="5"></GridPageSettings>
+                            <GridEvents OnToolbarClick="ToolbarClickHandler" TValue="Sanction"></GridEvents>
+                            <GridColumns>
+                                <GridColumn Field=@nameof(Sanction.EmployeeId) HeaderText="ID"></GridColumn>
+                                <GridColumn Field=@nameof(Sanction.EmployeeName) HeaderText="Name"></GridColumn>
+                                <GridColumn Field=@nameof(Sanction.EmployeeEmail) HeaderText="Email"></GridColumn>
+                                <GridColumn HeaderText="Type">
+                                    <Template>
+                                        @{
+                                            var sanction = context as Sanction;
+                                            if (sanction?.SanctionType != null)
+                                            {
+                                                <div>
+                                                    @sanction.SanctionType.Name
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div>No type</div>
+                                            }
+                                        }
+                                    </Template>
+                                </GridColumn>
+                                <GridColumn Field=@nameof(Sanction.Date) HeaderText="Occuring Date"></GridColumn>
+                                <GridColumn Field=@nameof(Sanction.Punishment) HeaderText="Punishment"></GridColumn>
+                                <GridColumn Field=@nameof(Sanction.PunishmentDate) HeaderText="Punishment Date"></GridColumn>
+                                <GridColumn HeaderText="Action">
+                                    <Template>
+                                        @{
+                                            var employee = context as Sanction;
+                                            if (employee != null)
+                                            {
+                                                <div>
+                                                    <i class="bi bi-pencil text-info" id="cursorStyle" @onclick="() => EditClicked(employee)"></i>
+                                                    <i class="bi bi-trash text-danger" id="cursorStyle" @onclick="() => DeleteClicked(employee)"></i>
+                                                </div>
+                                            }
+                                        }
+                                    </Template>
+                                </GridColumn>
+                            </GridColumns>
+                        </SfGrid>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    #cursorStyle {
+        cursor: pointer;
+    }
+</style>
+
+<SanctionDialog @ref="sanctionDialog"
+                ItemModel="ItemModel"
+                SanctionTypes="SanctionTypes"
+                HandleSaveOperationEvent="HandleSaveOperationEvent" />
+
+@code {
+    private SfGrid<Sanction>? DefaultGrid;
+    private SanctionDialog? sanctionDialog;
+    private Sanction ItemModel = new();
+    public List<Sanction> Sanctions { get; set; } = new();
+    public List<SanctionType> SanctionTypes { get; set; } = new();
+
+    protected async override Task OnInitializedAsync()
+    {
+        await GetTypes();
+        await GetSanctions();
+        allState.Action += StateHasChanged;
+    }
+
+    private async Task GetTypes()
+    {
+        SanctionTypes = await sanctionTypeService.GetAll(Constants.SanctionTypeBaseUrl);
+        Console.WriteLine($"Sanction Types Count: {SanctionTypes.Count}");
+    }
+
+    @inject AuthenticationStateProvider AuthenticationStateProvider
+
+    @inject IUserAccountService accountService
+
+
+    private async Task GetSanctions()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            // Busca el claim de correo electrónico en lugar del nombre de usuario
+            var emailClaim = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email);
+            var email = emailClaim?.Value; // Esto contendrá el correo electrónico del usuario autenticado
+
+            var roles = user.Claims.Where(c => c.Type == ClaimTypes.Role).Select(c => c.Value).ToList();
+
+            if (roles.Contains("Employee") && email != null)
+            {
+                Sanctions = await sanctionService.GetByEmployeeEmail(email, Constants.SanctionBaseUrl);
+            }
+            else
+            {
+                Sanctions = await sanctionService.GetAll(Constants.SanctionBaseUrl);
+            }
+        }
+    }
+
+    private void OpenDialog() => sanctionDialog?.OpenDialog();
+
+    private async Task HandleSaveOperationEvent(Sanction item)
+    {
+        var result = await sanctionService.UpDate(item, Constants.SanctionBaseUrl);
+        bool successCheck = await DisplayMessage(result.Flag, result.Message);
+        if (successCheck)
+        {
+            ItemModel = new();
+            await GetSanctions();
+        }
+    }
+
+    private void EditClicked(Sanction item)
+    {
+        if (sanctionDialog != null)
+        {
+            ItemModel = item;
+            sanctionDialog.OpenDialog();
+        }
+    }
+
+    private async Task DeleteClicked(Sanction item)
+    {
+        bool confirm = await dialogService.ConfirmAsync($"Are you sure you wanna delete this?", "Confirm Delete");
+        if (!confirm) return;
+        var response = await sanctionService.DeleteById(item.EmployeeId, Constants.SanctionBaseUrl);
+        var result = await DisplayMessage(response.Flag, response.Message);
+        if (result)
+            await GetSanctions();
+    }
+
+    private async Task<bool> DisplayMessage(bool flag, string message)
+    {
+        if (flag)
+        {
+            await dialogService.AlertAsync(message, "Success Operation");
+            return true;
+        }
+        else
+        {
+            await dialogService.AlertAsync(message, "Alert!");
+            return false;
+        }
+    }
+
+    // Excel export / PDF Export
+    public async Task ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+    {
+        if (args.Item.Text == "Excel Export")
+            await this.DefaultGrid!.ExportToExcelAsync();
+        if (args.Item.Text == "PDF Export")
+            await this.DefaultGrid!.ExportToPdfAsync();
+    }
+
+    public void Dispose()
+    {
+        allState.Action -= StateHasChanged;
+    }
+}

@@ -1,13 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+
 namespace BaseLibrary.Entities
 {
     public class OtherBaseEntity
     {
         public int Id { get; set; }
-        [Required]
-        public string CivilId { get; set; } = string.Empty;
-        [Required]
-        public string FileNumber { get; set; } = string.Empty;
-        public string? Other { get; set; }
+        public int EmployeeId { get; set; }
+        public string? EmployeeName { get; set; }
+        public string? EmployeeEmail { get; set; }
     }
 }

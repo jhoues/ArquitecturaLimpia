@@ -13,79 +13,191 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Client
 build_property.RootNamespace = Client
-build_property.ProjectDir = C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Client\
+build_property.ProjectDir = C:\DemoEmployeeManagementSystemSolution\Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\DELL\Desktop\CiautoAplicaionWEB\DemoEmployeeManagementSystemSolution\Client
+build_property.MSBuildProjectDirectory = C:\DemoEmployeeManagementSystemSolution\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/App.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/AccountPages/LoginPage.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/AccountPages/LoginPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VzXExvZ2luUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/AccountPages/RegisterPage.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/AccountPages/RegisterPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VzXFJlZ2lzdGVyUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/AdministrationPages/TableBanner.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpb25QYWdlc1xUYWJsZUJhbm5lci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/AuthenticationPage.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/AuthenticationPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/HomePage.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/DepartamentPages/BranchDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydGFtZW50UGFnZXNcQnJhbmNoRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/DepartamentPages/BranchPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydGFtZW50UGFnZXNcQnJhbmNoUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/DepartamentPages/DepartmentDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydGFtZW50UGFnZXNcRGVwYXJ0bWVudERpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/DepartamentPages/DepartmentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydGFtZW50UGFnZXNcRGVwYXJ0bWVudFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/DepartamentPages/GeneralDepartmentDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydGFtZW50UGFnZXNcR2VuZXJhbERlcGFydG1lbnREaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/DepartamentPages/GeneralDepartmentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERlcGFydGFtZW50UGFnZXNcR2VuZXJhbERlcGFydG1lbnRQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/EmployeePages/AddOrUpdateEmployeePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEVtcGxveWVlUGFnZXNcQWRkT3JVcGRhdGVFbXBsb3llZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/EmployeePages/EmployeeDetailPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEVtcGxveWVlUGFnZXNcRW1wbG95ZWVEZXRhaWxQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/EmployeePages/EmployeePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEVtcGxveWVlUGFnZXNcRW1wbG95ZWVQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/HomePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEhvbWVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/LocationPages/CityDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcQ2l0eURpYWxvZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/DepartamentPages/GeneralDepartmentDialog.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0YW1lbnRQYWdlc1xHZW5lcmFsRGVwYXJ0bWVudERpYWxvZy5yYXpvcg==
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/LocationPages/CityPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcQ2l0eVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/DepartamentPages/GeneralDepartmentPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0YW1lbnRQYWdlc1xHZW5lcmFsRGVwYXJ0bWVudFBhZ2UucmF6b3I=
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/LocationPages/CountryDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcQ291bnRyeURpYWxvZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/LocationPages/CountryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcQ291bnRyeVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/ButtonLoadingSpinner.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/LocationPages/TownDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcVG93bkRpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/LocationPages/TownPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExvY2F0aW9uUGFnZXNcVG93blBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/ProfilePages/ProfilePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXFByb2ZpbGVQYWdlc1xQcm9maWxlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/UserPages/UserDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXFVzZXJQYWdlc1xVc2VyRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/ContentPages/UserPages/UserPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXFVzZXJQYWdlc1xVc2VyUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/ButtonLoadingSpinner.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xCdXR0b25Mb2FkaW5nU3Bpbm5lci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/ProfileDropDown.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/ContextMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xDb250ZXh0TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/DoctorPages/DoctorDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xEb2N0b3JQYWdlc1xEb2N0b3JEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/DoctorPages/DoctorPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xEb2N0b3JQYWdlc1xEb2N0b3JQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/OvertimePages/OvertimeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xPdmVydGltZVBhZ2VzXE92ZXJ0aW1lRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/OvertimePages/OvertimePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xPdmVydGltZVBhZ2VzXE92ZXJ0aW1lUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/OvertimePages/OvertimeTypeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xPdmVydGltZVBhZ2VzXE92ZXJ0aW1lVHlwZURpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/OvertimePages/OvertimeTypePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xPdmVydGltZVBhZ2VzXE92ZXJ0aW1lVHlwZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/ProfileDropDown.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xQcm9maWxlRHJvcERvd24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/SanctionPages/SanctionDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xTYW5jdGlvblBhZ2VzXFNhbmN0aW9uRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/_Imports.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/SanctionPages/SanctionPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xTYW5jdGlvblBhZ2VzXFNhbmN0aW9uUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/SanctionPages/SanctionTypeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xTYW5jdGlvblBhZ2VzXFNhbmN0aW9uVHlwZURpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/SanctionPages/SanctionTypePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xTYW5jdGlvblBhZ2VzXFNhbmN0aW9uVHlwZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/SanctionPages/VacationDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xTYW5jdGlvblBhZ2VzXFZhY2F0aW9uRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/SanctionPages/VacationPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xTYW5jdGlvblBhZ2VzXFZhY2F0aW9uUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/SanctionPages/VacationTypeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xTYW5jdGlvblBhZ2VzXFZhY2F0aW9uVHlwZURpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/SanctionPages/VacationTypePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xTYW5jdGlvblBhZ2VzXFZhY2F0aW9uVHlwZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/Pages/OtherPages/TableBanner.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xUYWJsZUJhbm5lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DemoEmployeeManagementSystemSolution/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Layout/Authentication.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Layout/Authentication.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEF1dGhlbnRpY2F0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-b5hhnc0gxr
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Layout/MainLayout.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-tmopy668it
 
-[C:/Users/DELL/Desktop/CiautoAplicaionWEB/DemoEmployeeManagementSystemSolution/Client/Layout/NavMenu.razor]
+[C:/DemoEmployeeManagementSystemSolution/Client/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-9qkkwgv1yd

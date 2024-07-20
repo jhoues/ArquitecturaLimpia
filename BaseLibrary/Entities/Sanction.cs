@@ -9,8 +9,11 @@ namespace BaseLibrary.Entities
         public string Punishment { get; set; } = string.Empty;
         [Required]
         public DateTime PunishmentDate { get; set; }
-        
-        //Muchos a uno relasionado con Tipo de vacaiones
+
+        // Relación muchos a uno con SanctionType
+       
         public SanctionType? SanctionType { get; set; }
+
+        public int SanctionTypeId { get; set; }
     }
 }

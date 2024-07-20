@@ -1,0 +1,86 @@
+﻿@using BaseLibrary.Entities
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Popups
+@inject SfDialogService dialogService
+
+<SfDialog Width="350px" IsModal="true" ShowCloseIcon="true" @bind-Visible="IsVisible">
+    <Syncfusion.Blazor.Popups.DialogEvents OnOpen="OpenDialog"> </Syncfusion.Blazor.Popups.DialogEvents>
+
+    <DialogTemplates>
+        <Header> @Title Branch </Header>
+        <Content>
+            <EditForm Model="Branch" OnValidSubmit="Save">
+            <div class="card border-success">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="form-label">Id</label>
+                        <input @bind="Branch.Id" class="form-control" disabled />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <InputText @bind-Value="Branch.Name" class="form-control" />
+                    </div>
+                    <div class="form-group mt-3 mb-3">
+                        <label class="form-label">Select Departamento</label>
+
+                        @if (Branch.Department != null)
+                        {
+                            string selected = Branch.Department!.Name;
+                            <SfDropDownList TValue="string" TItem="Department" Placeholder="@selected" DataSource="Departments">
+                                <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                <DropDownListEvents TValue="string" TItem="Department" ValueChange="OnValueChange"></DropDownListEvents>
+                            </SfDropDownList>
+                        }
+                        else
+                        {
+                            <SfDropDownList TValue="string" TItem="Department" Placeholder="Select Department" DataSource="Departments">
+                                <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                <DropDownListEvents TValue="string" TItem="Department" ValueChange="OnValueChange"></DropDownListEvents>
+                            </SfDropDownList>
+                        }
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary float-end" type="submit">Guardar</button>
+                </div>
+            </div>
+            </EditForm>
+        </Content>
+    </DialogTemplates>
+@*     <Syncfusion.Blazor.Popups.DialogButtons>
+        <Syncfusion.Blazor.Popups.DialogButton Content="SAVE" Type="ButtonType.Submit" IsPrimary="true" OnClick="Save" />
+    </Syncfusion.Blazor.Popups.DialogButtons> *@
+</SfDialog>
+@code {
+    [Parameter] public Branch Branch { get; set; } = new Branch();
+    [Parameter] public List<Department> Departments { get; set; } = new();
+    [Parameter] public EventCallback<Branch> HandleSaveOperationEvent { get; set; }
+
+    private bool IsVisible { get; set; } = false;
+    public string Title { get; set; } = "Add";
+    private async void Save()
+    {
+        if (string.IsNullOrEmpty(Branch.Name) || Branch.DepartmentId <= 0)
+            await dialogService.AlertAsync("Tu necesitas asignar un departamento.","Alerta!!");
+            else
+            await HandleSaveOperationEvent.InvokeAsync(Branch);
+    }
+    public async Task OpenDialog()
+    {
+        IsVisible = true;
+        await ForceLoadDepartments();
+        StateHasChanged();
+    }
+    async Task ForceLoadDepartments() =>
+    Departments = await departmentService.GetAll(Constants.DepartmentBaseUrl);
+    public void ChangeTitle(string title)
+    {
+        Title = title;
+    }
+    public void OnValueChange(ChangeEventArgs<string, Department> args)
+    {
+        Branch.DepartmentId = int.Parse(args.Value);
+    }
+
+
+}

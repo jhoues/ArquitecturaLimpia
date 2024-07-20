@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BaseLibrary.Entities
@@ -14,6 +15,7 @@ namespace BaseLibrary.Entities
         
         public int GeneralDepartmentId { get; set; }
         //uno a muchos relacionado con Branch
+        [JsonIgnore]
         public List<Branch>? Branches { get; set; }
     }
 }

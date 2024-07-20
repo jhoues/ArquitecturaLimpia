@@ -7,7 +7,9 @@ using Microsoft.IdentityModel.Tokens;
 using ServerLibrary.Data;
 using ServerLibrary.Helpers;
 using ServerLibrary.Repositories.Contracts;
+using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Runtime.CompilerServices;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -42,47 +44,34 @@ namespace ServerLibrary.Repositories.Implementations
             }
 
             var checkUserRole = await appDbContext.SystemRoles.FirstOrDefaultAsync(_ => _.Name!.Equals(Constants.User));
+            //SystemRole response = new();
+            //if (checkUserRole is null )
+            //{
+            //    response = await AddToDatabase(new SystemRole() { Name = Constants.User });
+            //    await AddToDatabase(new UserRole() { RoleId = response.Id, UserId = applicationUser.Id });
+            //}
+            //else
+            //{
+            //    await AddToDatabase(new UserRole() { RoleId = checkUserRole.Id, UserId = applicationUser.Id });
+            //}
+            //return new GeneralResponse(true, "Account created");
+
+            var checkEmployeeRole = await appDbContext.SystemRoles.FirstOrDefaultAsync(_ => _.Name!.Equals(Constants.Employee));
             SystemRole response = new();
-            if (checkUserRole is null )
+            if (checkEmployeeRole is null)
             {
-                response = await AddToDatabase(new SystemRole() { Name = Constants.User });
+                response = await AddToDatabase(new SystemRole() { Name = Constants.Employee });
                 await AddToDatabase(new UserRole() { RoleId = response.Id, UserId = applicationUser.Id });
             }
             else
             {
-                await AddToDatabase(new UserRole() { RoleId = checkUserRole.Id, UserId = applicationUser.Id });
+                await AddToDatabase(new UserRole() { RoleId = checkEmployeeRole.Id, UserId = applicationUser.Id });
             }
             return new GeneralResponse(true, "Account created");
+
+
+
         }
-
-        //public async Task<LoginResponse> SignInAsync(Login user)
-        //{
-        //    if (user is null) return new LoginResponse(false, "Model is empty");
-        //    var applicationUser = await FindUserByEmail(user.Email!);
-        //    if (applicationUser is null) return new LoginResponse(false, "usuario no funciona");
-
-        //    //Verificar contra
-        //    if (!BCrypt.Net.BCrypt.Verify(user.Password, applicationUser.Password))
-        //        return new LoginResponse(false,"Email/Password not valid");
-
-        //    var getUserRole = await FindUserRole(applicationUser.Id);
-        //    if (getUserRole is null) return new LoginResponse(false, "user role not found");
-
-        //    var getRoleName = await FindRoleName(getUserRole.RoleId);
-        //    if (getUserRole is null) return new LoginResponse(false, "user role not found");
-
-        //    string jwtToken = GenerateToken(applicationUser, getRoleName!.Name!);
-        //    string refreshToken = GenerateRefreshToken();
-        //    //Guardar el tokenrefrescado en la base de datos 
-        //    var findUser = await appDbContext.RefreshTokenInfos.FirstOrDefaultAsync(_ => _.UserId == applicationUser.Id);
-        //    if (findUser is not null)
-        //    {
-        //        findUser!.Token = refreshToken;
-        //        await appDbContext.SaveChangesAsync();
-        //    }
-
-        //    return new LoginResponse(true, "Login successfully", jwtToken, refreshToken);
-        //}
         public async Task<LoginResponse> SignInAsync(Login user)
         {
             if (user is null) return new LoginResponse(false, "Model is empty");
@@ -91,13 +80,13 @@ namespace ServerLibrary.Repositories.Implementations
 
             //Verificar contra
             if (!BCrypt.Net.BCrypt.Verify(user.Password, applicationUser.Password))
-                return new LoginResponse(false, "Email/Password not valid");
+                return new LoginResponse(false, "Email/Password no valido");
 
             var getUserRole = await FindUserRole(applicationUser.Id);
-            if (getUserRole is null) return new LoginResponse(false, "user role not found");
+            if (getUserRole is null) return new LoginResponse(false, "Rol de usuario no funciona");
 
             var getRoleName = await FindRoleName(getUserRole.RoleId);
-            if (getUserRole is null) return new LoginResponse(false, "user role not found");
+            if (getUserRole is null) return new LoginResponse(false, "Rol de usuario no funciona");
 
             string jwtToken = GenerateToken(applicationUser, getRoleName!.Name!);
             string refreshToken = GenerateRefreshToken();
@@ -114,7 +103,7 @@ namespace ServerLibrary.Repositories.Implementations
             }
             await appDbContext.SaveChangesAsync();
 
-            return new LoginResponse(true, "Login successfully", jwtToken, refreshToken);
+            return new LoginResponse(true, "Acceso satisfactorio", jwtToken, refreshToken);
         }
 
 
@@ -179,5 +168,92 @@ namespace ServerLibrary.Repositories.Implementations
             await appDbContext.SaveChangesAsync();
             return new LoginResponse(true, "Token refreshed successfully", jwtToken, refreshToken);
         }
+
+        public async Task<List<ManageUser>> GetUsers()
+        {
+            var allUsers = await GetApplicationUsers();
+            var allUserRoles = await UserRoles();
+            var allRoles = await SystemRoles();
+
+            if (allUsers.Count == 0 || allRoles.Count == 0) return new List<ManageUser>();  // Cambiado a devolver una lista vacía en lugar de `null`
+
+            var users = new List<ManageUser>();
+            foreach (var user in allUsers)
+            {
+                var userRole = allUserRoles.FirstOrDefault(u => u.UserId == user.Id);
+                var roleName = allRoles.FirstOrDefault(r => r.Id == userRole?.RoleId);
+                string plainPassword = BCrypt.Net.BCrypt.GenerateSalt(); // Generar una contraseña en texto plano
+                users.Add(new ManageUser()
+                {
+                    UserId = user.Id,
+                    Name = user.Fullname,
+                    Email = user.Email,
+                    Password = plainPassword,  // Aquí se incluye la contraseña
+                    Role = roleName?.Name
+                });
+            }
+            return users;
+        }
+
+        private async Task<List<SystemRole>> SystemRoles() => await appDbContext.SystemRoles.AsNoTracking().ToListAsync();
+        private async Task<List<UserRole>> UserRoles() => await appDbContext.UserRoles.AsNoTracking().ToListAsync();
+        private async Task<List<ApplicationUser>> GetApplicationUsers() => await appDbContext.ApplicationUsers.AsNoTracking().ToListAsync();
+
+        public async Task<GeneralResponse> UpdateUser(ManageUser user)
+        {
+            var getRole = (await SystemRoles()).FirstOrDefault(r => r.Name!.Equals(user.Role));
+            var userRole = await appDbContext.UserRoles.FirstOrDefaultAsync(u => u.UserId == user.UserId);
+            userRole!.RoleId = getRole!.Id;
+            await appDbContext.SaveChangesAsync();
+            return new GeneralResponse(true, "Rol de usuario actualizado");
+        }
+
+        public async Task<List<SystemRole>> GetRoles() => await SystemRoles();
+        
+
+        public async Task<GeneralResponse> DeleteUser(int id)
+        {
+            var user = await appDbContext.ApplicationUsers.FirstOrDefaultAsync(u => u.Id == id);
+            appDbContext.ApplicationUsers.Remove(user!);
+            await appDbContext.SaveChangesAsync();
+            return new GeneralResponse(true, "Usuario eliminado");
+        }
+
+       // public async Task<string> GetUserImage(int id) => (await GetApplicationUsers()).FirstOrDefault(u => u.Id == id)!.Image;
+
+        public async Task<bool> UpdateProfile(UserProfile profile)
+        {
+            var user = await appDbContext.ApplicationUsers.FirstOrDefaultAsync(u => u.Id == int.Parse(profile.Id));
+            if (user != null)
+            {
+                user.Email = profile.Email;
+                user.Fullname = profile.Name;
+                user.Password = profile.Password;
+                //user.Image = profile.Image;
+                await appDbContext.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
+        public async Task<string> GetPlainPassword(string email)
+        {
+            var user = await FindUserByEmail(email);
+            if (user == null) throw new Exception("User not found.");
+
+            // Generar una contraseña en texto plano que coincide con el hash almacenado
+            // Nota: Esto es solo para propósitos de desarrollo.
+            string plainPassword = BCrypt.Net.BCrypt.GenerateSalt();
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(plainPassword);
+
+            // Aquí deberías verificar si el hash generado es igual al almacenado
+            if (!BCrypt.Net.BCrypt.Verify(plainPassword, user.Password))
+            {
+                throw new Exception("The generated password does not match the stored hash.");
+            }
+
+            return plainPassword;
+        }
+
+        
     }
 }

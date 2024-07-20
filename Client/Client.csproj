@@ -7,19 +7,51 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\OtherPages\VacationPages\VacationDialog.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.5" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.3" PrivateAssets="all" />
-    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="23.1.36" />
-    <PackageReference Include="Syncfusion.Blazor.Popups" Version="23.1.36" />
+    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="25.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.DropDowns" Version="25.2.7" />
+    <PackageReference Include="Syncfusion.Blazor.Grid" Version="23.1.36" />
+    <PackageReference Include="Syncfusion.Blazor.Popups" Version="25.2.7" />
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.36" />
   </ItemGroup>
+
 
   <ItemGroup>
     <ProjectReference Include="..\BaseLibrary\BaseLibrary.csproj" />
     <ProjectReference Include="..\ClientLibrary\ClientLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Pages\ContentPages\DepartamentPages\DepartmentDialog.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\ContentPages\LocationPages\CityPage.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\OtherPages\VacationPages\VacationDialog.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\OtherPages\VacationPages\VacationDialog.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\OtherPages\SanctionPages\VacationDialog.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\OtherPages\VacationPages\" />
   </ItemGroup>
 
 </Project>

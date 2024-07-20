@@ -20,11 +20,11 @@
                     </div>
                     <div class="card-body">
                         <div class="form-group mt-3">
-                            <label class="form-label">Email</label>
+                            <label class="form-label">Correo</label>
                             <InputText @bind-Value="User.Email" class="form-control"></InputText>
                         </div>
                         <div class="form-group mt-3">
-                            <label class="form-label">Password</label>
+                            <label class="form-label">Contraseña</label>
                             <input type="password" @bind="User.Password" class="form-control"></input>
                         </div>
                         <div class="form-group mt-3">
@@ -34,15 +34,15 @@
                             }
                             else
                             {
-                                <button class="btn btn-primary float-end" type="submit">Registerr</button>
+                                <button class="btn btn-primary float-end" type="submit">Ingresar</button>
                             }
 
                         </div>
                     </div>
                     <div class="card-footer">
                         <span class="text-center">
-                            Don't have account? |
-                            <a class="btn-link" href="identity/account/register">Sign Up</a>
+                            No tienes cuenta? |
+                            <a class="btn-link" href="identity/account/register">Registrate</a>
                             <ValidationSummary />
                         </span>
                     </div>

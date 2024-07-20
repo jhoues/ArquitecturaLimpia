@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\Server.csproj": {}
+    "C:\\DemoEmployeeManagementSystemSolution\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj": {
+    "C:\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj",
+        "projectUniqueName": "C:\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj",
         "projectName": "BaseLibrary",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\obj\\",
+        "projectPath": "C:\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj",
+        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +53,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Syncfusion.Blazor.DropDowns": {
+              "target": "Package",
+              "version": "[25.2.7, )"
             }
           },
           "imports": [
@@ -71,17 +79,21 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj": {
+    "C:\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj",
+        "projectUniqueName": "C:\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj",
         "projectName": "ServerLibrary",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\obj\\",
+        "projectPath": "C:\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj",
+        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,8 +108,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj"
+              "C:\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj": {
+                "projectPath": "C:\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj"
               }
             }
           }
@@ -143,6 +155,10 @@
               "target": "Package",
               "version": "[7.0.3, )"
             },
+            "Syncfusion.Blazor.DropDowns": {
+              "target": "Package",
+              "version": "[25.2.7, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -168,17 +184,21 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\Server.csproj": {
+    "C:\\DemoEmployeeManagementSystemSolution\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\DemoEmployeeManagementSystemSolution\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\Server\\obj\\",
+        "projectPath": "C:\\DemoEmployeeManagementSystemSolution\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoEmployeeManagementSystemSolution\\Server\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -193,11 +213,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj"
+              "C:\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj": {
+                "projectPath": "C:\\DemoEmployeeManagementSystemSolution\\BaseLibrary\\BaseLibrary.csproj"
               },
-              "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\CiautoAplicaionWEB\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj"
+              "C:\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj": {
+                "projectPath": "C:\\DemoEmployeeManagementSystemSolution\\ServerLibrary\\ServerLibrary.csproj"
               }
             }
           }
@@ -246,6 +266,10 @@
             "Swashbuckle.AspNetCore.Filters": {
               "target": "Package",
               "version": "[7.0.12, )"
+            },
+            "Syncfusion.Blazor.DropDowns": {
+              "target": "Package",
+              "version": "[25.2.7, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
