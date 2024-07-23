@@ -46,6 +46,8 @@ builder.Services.AddScoped<IGenericServiceInterface<VacationType>, GenericServic
 builder.Services.AddScoped<IGenericServiceInterface<Sanction>, GenericServiceImplementation<Sanction>>(); 
 builder.Services.AddScoped<IGenericServiceInterface<SanctionType>, GenericServiceImplementation<SanctionType>>();
 builder.Services.AddScoped<IGenericServiceInterface<Doctor>, GenericServiceImplementation<Doctor>>();
+builder.Services.AddScoped<IGenericServiceInterface<Certificate>, GenericServiceImplementation<Certificate>>();
+builder.Services.AddScoped<IGenericServiceInterface<CertificateType>, GenericServiceImplementation<CertificateType>>();
 
 
 //Employe

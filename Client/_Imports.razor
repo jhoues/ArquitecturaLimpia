@@ -30,6 +30,7 @@
 @using Client.Pages.ContentPages.UserPages
 @using Client.Pages.ContentPages.LocationPages
 @using Client.Pages.ContentPages.ProfilePages
+@using Client.Pages.OtherPages.CertificatePages
 
 
 @using Syncfusion.Blazor.Grids
@@ -73,3 +74,8 @@
 @* User Profile *@
 @inject UserProfileState userProfileState
 @inject GetHttpClient getHttpClient
+
+@* User Profile *@
+@inject IGenericServiceInterface<Certificate> certificateService
+@inject IGenericServiceInterface<CertificateType> certificateTypeService
+

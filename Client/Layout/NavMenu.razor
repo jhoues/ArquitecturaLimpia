@@ -143,6 +143,14 @@
                             </div>
                         </a>
                     </li>
+                            <li style="list-style:none">
+                                <a class="nav-link p-2 cusorStyle" @onclick="CertificatesTypeClicked">
+                                    <div class="hstack">
+                                        <span class="bi bi-airplane-fill fs-5 text-center" aria-hidden="true" style="margin-top:0rem" zise="50px"></span>
+                                        <span class="fs-5">Certificados</span>
+                                    </div>
+                                </a>
+                            </li>
                     </Authorized>
             </AuthorizeView>
 
@@ -168,27 +176,6 @@
                 </ul>
             </div>
         </div>
-
-
-        @* <AuthorizeView Roles="Employee,Admin,User">
-            <Authorized>
-                <div class="nav-item px-3">
-                    <NavLink class="nav-link p-2" @onclick="ShowAdminMenuContainer" style="cursor:pointer;" href="javascript: void()">
-                        <div class="hstack gap-2">
-                            <span class="bi bi-person-fill fs-3 text-center" aria-hidden="true" style="margin-top : 1rem"></span>
-                            <span>Empleados</span>
-                        </div>
-                    </NavLink>
-                    <a class="nav-link p-2 text-white" style="margin-left:5rem; visibility:@CssStyle">
-                        <div class="hstack" @onclick="EmployeeInfoClicked">
-                            <span class="bi bi-people fs-5 text-center" aria-hidden="true" style="margin-top : 0rem"></span>
-                            <span>Información - Certificados</span>
-                        </div>
-                    </a>
-                 
-                </div>
-            </Authorized>
-        </AuthorizeView> *@
     </nav>
 </div>
 
@@ -260,4 +247,7 @@
     void SanctionTypeClicked() => allState.SanctionTypeClicked();
     void HomeClicked() => allState.EmployeeClicked();
     void EmployeeInfoClicked() => allState.EmployeeInfoClicked();
+
+
+    void CertificatesTypeClicked() => allState.CertificatesTypeClicked();
 }

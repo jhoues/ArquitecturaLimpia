@@ -31,6 +31,8 @@ namespace ServerLibrary.Data
         public DbSet<Sanction> Sanctions { get; set; }
         public DbSet<SanctionType> SanctionTypes { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Certificate> Certificates { get; set; }
+        public DbSet<CertificateType> CertificateTypes { get; set; }
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
         //    base.OnModelCreating(modelBuilder);

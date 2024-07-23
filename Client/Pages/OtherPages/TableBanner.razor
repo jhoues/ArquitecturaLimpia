@@ -43,6 +43,9 @@
                 </div>
             </div>
         </div>
+
+                
+
             </Authorized>
         </AuthorizeView>
         <AuthorizeView Roles="Admin">
@@ -70,6 +73,7 @@
     public List<Sanction> Sanctions { get; set; } = new();
     public List<Vacation> Vacations { get; set; } = new();
     public List<Doctor> Health { get; set; } = new();
+
     protected async override Task OnInitializedAsync()
     {
     allState.Action += StateHasChanged;
@@ -85,6 +89,7 @@
             Sanctions = await sanctionService.GetAll(Constants.SanctionBaseUrl);
             Vacations = await vacationService.GetAll(Constants.VacationBaseUrl);
             Health = await doctorService.GetAll(Constants.DoctorBaseUrl);
+            // Certificates = await certificateService.GetAll(Constants.CertificateBaseUrl);
         }
         catch (Exception ex)
         {
@@ -100,6 +105,7 @@
     void VacationClicked()=> allState.VacationClicked();
     void EmployeeClicked() => allState.EmployeeClicked();
     void DepartmentClicked() => allState.DepartmentClicked();
+ 
 
     public void Dispose() => allState.Action -= StateHasChanged;
 }

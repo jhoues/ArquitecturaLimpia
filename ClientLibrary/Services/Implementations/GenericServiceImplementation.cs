@@ -12,14 +12,7 @@ namespace ClientLibrary.Services.Implementations
 {
     public class GenericServiceImplementation<T>(GetHttpClient getHttpClient) : IGenericServiceInterface<T>
     {
-        //Create 
-        //public async Task<GeneralResponse> Insert(T item, string baseUrl)
-        //{
-        //    var httpClient = await getHttpClient.GetPrivateHttpClient();
-        //    var response = await httpClient.PostAsJsonAsync($"{baseUrl}/add", item);
-        //    var result = await response.Content.ReadFromJsonAsync<GeneralResponse>();
-        //    return result!;
-        //}
+        
         public async Task<GeneralResponse> Insert(T item, string baseUrl)
         {
             try

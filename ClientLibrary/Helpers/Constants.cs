@@ -26,5 +26,8 @@ namespace ClientLibrary.Helpers
 
         public const string VacationBaseUrl = "api/vacation";
         public const string VacationTypeBaseUrl = "api/vacationtype";
+
+        public const string CertificateBaseUrl = "api/certificate";
+        public const string CertificateTypeBaseUrl = "api/certificatetype";
     }
 }

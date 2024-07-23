@@ -32,7 +32,7 @@ namespace ServerLibrary.Repositories.Implementations
         }
         public async Task<GeneralResponse> Update(OvertimeType item)
         {
-            var obj = await appDbContext.Branches.FindAsync(item.Id);
+            var obj = await appDbContext.OvertimeTypes.FindAsync(item.Id);
             if (obj is null) return NotFound();
             obj.Name = item.Name;
             await Commit();

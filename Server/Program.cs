@@ -65,6 +65,8 @@ builder.Services.AddScoped<IGenericRepositoryInterface<Vacation>, VacationReposi
 builder.Services.AddScoped<IGenericRepositoryInterface<VacationType>, VacationTypeRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Doctor>, DoctorRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Employee>, EmployeeRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Certificate>, CertificateRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<CertificateType>, CertificateTypeRepository>();
 
 builder.Services.AddCors(options =>
 {

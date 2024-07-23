@@ -161,6 +161,29 @@
             Action?.Invoke();
         }
 
+        //Show Certificates
+
+        public bool ShowCertificateInfo { get; set; }
+
+        public void CertificateClicked()
+        {
+            ResetAllDepartments();
+            ShowCertificateInfo = true;
+            Action?.Invoke();
+        }
+
+        //Show Certificates
+
+        public bool ShowCertificateTypeInfo { get; set; }
+
+        public void CertificatesTypeClicked()
+        {
+            ResetAllDepartments();
+            ShowCertificateTypeInfo = true;
+            Action?.Invoke();
+        }
+
+
         private void ResetAllDepartments()
         {
             ShowGeneralDepartment = false;
@@ -179,6 +202,8 @@
             ShowVacationType = false;
             ShowSanctionType = false;
             ShowEmployeeInfo = false;
+            ShowCertificateInfo = false;
+            ShowCertificateTypeInfo = false;
         }
     }
 }
